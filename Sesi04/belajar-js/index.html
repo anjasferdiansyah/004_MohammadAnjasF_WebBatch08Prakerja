@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar JS</title>
+    <style>
+      p {
+        color: red;
+      }
+
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Nama : Mohammad Anjas Ferdiansyah</h3>
+    <h3>Kode Peserta : INPG-PKJ-08-004</h3>
+    <h3>Batch : 08</h3>
+    <br />
+    <h1>BELAJAR ALGORITMA DASAR</h1>
+    <h1>Menghitung luas dan keliling lingkaran</h1>
+    <ul>
+      <li>Tentukan jari-jari lingkaran dengan menginputkan ke prompt</li>
+      <li>Lalu kalkulasikan luas lingkaran dengan rumus pi kali r kuadrat</li>
+      <li>Kalkulasikan keliling lingkaran dengan rumus 2 kali pi kali r</li>
+      <li>Tampilkan hasil kalkulasi</li>
+      <h1>Hasil Luas :</h1>
+      <p class="luas"></p>
+      <h1>Hasil Keliling :</h1>
+      <p class="keliling"></p>
+    </ul>
+  </body>
+  <script>
+    //menghitung luas lingkaran
+    //1. Tentukan jari-jari lingkaran dan simpan ke dalam variabel
+    let jariJari = parseInt(prompt("Masukkan Angka"));
+
+    //2. hitung luas lingkaran (jari-jari pangkat 2 dikali pi)
+    let luas = jariJari * jariJari * Math.PI;
+
+    //3. hitung keliling lingkaran (2 kali pi kali jari-jari)
+    let keliling = 2 * Math.PI * jariJari;
+
+    //4. tampilkan hasil dengan console.log atau di document
+    console.log(luas);
+    console.log(keliling);
+    // menampilkan hasil di doc
+    let pLuas = document.querySelector(".luas");
+    let pKeliling = document.querySelector(".keliling");
+    pLuas.innerHTML = luas;
+    pKeliling.innerHTML = keliling;
+  </script>
+</html>

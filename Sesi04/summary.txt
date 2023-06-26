@@ -1,0 +1,6 @@
+Belajar Algoritma
+
+- Algoritma merupakan suatu alur atau proses untuk menyelesaikan sesuatu terutama program.
+- Pseudoccode yaitu suatu metode untuk meringkas suatu algoritma menjadi baris yang lebih rapih
+- Condition merupakan alur suatu pemograman yang hanya dijalankan ketika memenuhi suatu kondisi atau bisa disebut juga pencabangan
+- looping merupakan alur pemograman yang diulang dalam suatu frekuensi tertentu.
