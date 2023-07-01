@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar DOM</title>
+  </head>
+  <body>
+    <h2 id="judul2">Delete Saya</h2>
+    <h1>Belajar DOM</h1>
+    <script>
+      //mengambil head
+      document.head;
+
+      //mengambil body;
+      document.body;
+
+      //Mengetahui length title
+      var title = document.title.length;
+      console.log("panjang judul =" + title);
+      //membuat elemen
+      var p = document.createElement("p");
+
+      //menghapus elemen
+      let h2 = document.getElementById("judul2");
+
+      h2.remove();
+      console.log("elemen sudah dihapus");
+    </script>
+  </body>
+</html>

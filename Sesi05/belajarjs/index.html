@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function dan event</title>
+  </head>
+  <body>
+    <h1>Hitung mundur maju</h1>
+    <button onclick="mundur()">Mundur</button>
+    <button onclick="maju()">Maju</button>
+    <p id="hasil">10</p>
+  </body>
+  <script>
+    var bilAwal = 10;
+    function maju() {
+      bilAwal++;
+      document.getElementById("hasil").innerHTML = bilAwal;
+    }
+    function mundur() {
+      bilAwal--;
+      document.getElementById("hasil").innerHTML = bilAwal;
+    }
+  </script>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan</title>
+    <style>
+      label {
+        display: block;
+        width: 80px;
+      }
+      button {
+        color: white;
+        background-color: #c866a2;
+        border: 1px solid pink;
+        margin: 10px 0;
+        border-radius: 5px;
+        padding: 10px;
+        width: 70px;
+        transition: 0.3s;
+      }
+
+      button:hover {
+        cursor: pointer;
+        transition: all 0.3s;
+        color: black;
+        background-color: rgba(0, 212, 255, 1);
+      }
+    </style>
+  </head>
+  <body>
+    <label for="pesan">Pesan</label>
+    <input type="text" placeholder="Masukkan pesan anda" id="pesan" /><br />
+    <label for="kali">Berapa Kali</label>
+    <input type="number" id="kali" /><br />
+    <button id="cetak" onclick="cetak()">Cetak!</button>
+    <ol class="ol"></ol>
+
+    <script>
+      // const nama_variabel= document.getElementById("nama_variabel")
+      //Deklarasi variabel kemudian ambil element input text, input number, dan elemen ol
+      const kali = document.getElementById("kali");
+      const ol = document.querySelector(".ol");
+      const pesan = document.getElementById("pesan");
+
+      //buat fungsi cetak
+      function cetak() {
+        //deklarasi variabel dan mengambil isi pesan dan number(kali)
+        var isiPesan = pesan.value;
+        var isiKali = kali.value;
+        var hitung = 0;
+
+        //mereset elemen <li> setelah dicetak
+        ol.innerHTML = "";
+
+        //looping menggunakan while
+
+        // while (hitung < isiKali) {
+        //   ol.innerHTML = ol.innerHTML + `<li>${isiPesan}</li>`;
+        //   hitung++;
+        // }
+
+        // Menggunakan looping for;
+
+        for (hitung; hitung < isiKali; hitung++) {
+          ol.innerHTML = ol.innerHTML + "<li>" + isiPesan + "</li>";
+        }
+      }
+    </script>
+  </body>
+</html>

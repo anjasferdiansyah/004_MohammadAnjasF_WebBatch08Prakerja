@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Regex</title>
+  </head>
+  <body>
+    <h1>Belajar Regex</h1>
+    <script>
+      //Pembuatan RegEx pada javascript
+      // var foo = /ab+c/;
+      // console.log(foo);
+      // console.log(typeof foo);//object
+
+      // var bar = new RegExp("ab+c")
+      // console.log(bar);
+      // console.log(typeof bar);//object
+
+      //    //method exect
+      //    var foo = "1 jam sama dengan 60 menit sama dengan 3600 detik";
+      //    var pola = /\d+/;
+
+      //    console.log(pola.exec(foo)); //array
+
+      //    var foo = "1 jam sama dengan 60 menit sama dengan 3600 detik";
+      //    var pola = /\d+/;
+
+      //    console.log(pola.exec(foo)); //array [1]
+      //    console.log(pola.exec(foo)); //array [60]
+      //    console.log(pola.exec(foo)); //array [3600]
+      //    console.log(pola.exec(foo)); //null
+
+      //Regex object method
+      //   let foo = "Belajar Javascript";
+
+      //   console.log(/Javascript/.test(foo)); //true
+      //   console.log(/javascript/.test(foo)); //false
+      //   console.log(/Belajar/.test(foo)); //true
+      //   console.log(/belajar/.test(foo)); //false
+      //   console.log(/Java/.test(foo)); //true
+      //   console.log(/ajar/.test(foo)); //true
+
+      //Pola regexp sebagai string
+      var pola = /[abcde]../;
+      console.log(pola.test("abaa")); //True
+      console.log(pola.test("fba")); //false
+      console.log(pola.test("1dd")); //false
+      console.log(pola.test("add")); //true
+      console.log(pola.test("belajar")); //true
+    </script>
+  </body>
+</html>

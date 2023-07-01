@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tugas Mandiri 6</title>
+    <style>
+      .paragraf {
+        font-size: 1.5em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p class="paragraf satu">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat
+      recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo
+      dolorum consequatur sed laudantium suscipit quis magni, maiores in?
+    </p>
+    <p class="paragraf dua">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat
+      recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo
+      dolorum consequatur sed laudantium suscipit quis magni, maiores in?
+    </p>
+    <p class="paragraf tiga">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat
+      recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo
+      dolorum consequatur sed laudantium suscipit quis magni, maiores in?
+    </p>
+
+    <script>
+      //Membuat fungsi ganti warna dengan 2 parameter yaitu kelas, dan array warna yang akan digunakan
+      function gantiWarna(kelas, arrWarna) {
+        // Deklarasi DOM dengan menambahkan parameter kelas
+        let paragraf = document.querySelector(kelas);
+        let warna = arrWarna; // Warna yang akan digunakan
+        let index = 0;
+
+        let interval = setInterval(() => {
+          paragraf.style.color = warna[index];
+
+          //Pengulangan sederhana menggunakan modulus agar index tetap valid dan tidak melebihi array length
+          index = (index + 1) % warna.length;
+          // interval ke - 1 :
+          // 0 = 1 % 2 = 1,
+          // interval ke - 2 :
+          // 1 = 2 % 2 = 0 kembali ke awal dst.
+        }, 500); // waktu interval
+
+        //membuat fungsi timeout untuk menjalankan fungsi clear interval dengan waktu 10 detik
+        setTimeout(() => {
+          clearInterval(interval);
+          let paragrafSatu = document.querySelector(".paragraf.satu");
+          let paragrafDua = document.querySelector(".paragraf.dua");
+          let paragrafTiga = document.querySelector(".paragraf.tiga");
+          paragrafSatu.style.color = "red";
+          paragrafDua.style.color = "green";
+          paragrafTiga.style.color = "blue";
+        }, 10000);
+      }
+
+      // panggil function ganti warna
+      gantiWarna(".paragraf.satu", ["red", "black"]);
+      gantiWarna(".paragraf.dua", ["green", "black"]);
+      gantiWarna(".paragraf.tiga", ["blue", "black"]);
+    </script>
+  </body>
+</html>
