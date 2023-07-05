@@ -1,0 +1,8 @@
+Belajar Testing dan Deploy Website
+- Software testing adalah suatu pengecekan apakah result dari aplikasi tersebut sesuai yang diharapkan developer atau tidak
+- Terdapat 3 macam paradigma software testing
+1. unit testing
+2. functional testing
+3. integration testing
+- Deployment adalah proses di mana kita melepas aplikasi secara luas
+- ada macam-macam platform untuk deployment contohnya netlify

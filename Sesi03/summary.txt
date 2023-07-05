@@ -1,0 +1,11 @@
+- CSS (cascading style sheet) adalah suatu file untuk menghias suatu halaman website
+- CSS tersusun atas selector, property, dan value
+- CSS bisa dihubungkan secara inline, internal dan eksternal
+- github merupakan suatu VCS (Version Control System) yang dapat memudahkan developer untuk melacak perubahan basis kode dan memudahkan untuk berkolaborasi
+- command - command pada git :
+1. git init => untuk menginisiasi git pada directory
+2. git add => untuk mengstagging perubahan
+3. git status => untuk melihat status perubahan file baik itu file yang unstaging atau stagging
+4. git commit => untuk comit file secara lokal
+5.git remote add => untuk menambahkan direktori online (repository);
+6. git push => untuk mengirim comit pada repository github

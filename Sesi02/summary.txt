@@ -1,0 +1,3 @@
+- HTML adalah bahasa markup yang hanya digunakan untuk markup suatu dokumen
+- HTML disusun dengan macam macam tag
+- HTML tersusun dengan struktur "<!DOCTYPE HTML>" diikuti dengan tag html

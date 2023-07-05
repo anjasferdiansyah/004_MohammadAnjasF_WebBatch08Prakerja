@@ -1,0 +1,4 @@
+- tugas front end web developer yaitu membuat interface untuk user dalam sebuah website, mengembangkan kode yang dapat digunakan untuk jangka panjang, membantu back end developer dengan coding trouble shooting
+- tugas back end developer diantaranya merancang database, mengembangkan skrip, mengintegrasikan elemen yang dikembangkan front end, merancang dan mendesain tempat penyimpanan database
+-web browser berfungsi untuk membaca dokumen HTML dan CSS
+-text editor adalah aplikasi untuk mengedit code
